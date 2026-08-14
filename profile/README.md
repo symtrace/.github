@@ -1,73 +1,164 @@
-# symtrace
+# SymtraceLabs
 
-> Understanding software beyond line-based version control.
+> **Open Research. Open Technology.**
 
-symtrace is an open-source software engineering initiative focused on deterministic semantic program analysis, software evolution, and developer tooling.
+SymtraceLabs is an open research and technology initiative focused on understanding, building, and improving software systems through practical experimentation and open-source engineering.
 
-Our goal is to make software changes understandable at the level of program structure rather than text, enabling developers, researchers, and future software engineering tools to reason about code evolution more effectively.
+We explore technical problems, build working systems, evaluate them through reproducible experiments, and publish useful implementations, research artifacts, and engineering knowledge openly.
 
+Our work currently focuses on **software engineering, program analysis, developer tooling, software evolution, and systems research**, while leaving room for future research across emerging areas of technology.
+
+**[Website](https://symtrace-labs.onrender.com/)** · **[GitHub](https://github.com/symtrace)**
 
 ## Mission
 
-Traditional version control systems answer:
+We believe useful research should not end with an idea, and useful software should not end with a repository.
+
+SymtraceLabs aims to connect research with working systems through a simple cycle:
+
+```text
+Research
+   ↓
+Experiment
+   ↓
+Build
+   ↓
+Benchmark
+   ↓
+Reproduce
+   ↓
+Open
+```
+
+Our goal is to make technical work understandable, reproducible, and useful to the wider community.
+
+## Current Project
+
+### Symtrace
+
+**Deterministic semantic analysis for software evolution.**
+
+[Symtrace](https://github.com/Symtrace/Symtrace) is our first open-source project. It explores how software changes can be understood beyond textual line differences.
+
+Traditional version control systems primarily answer:
 
 > Which lines changed?
 
-SymTrace aims to answer:
+Symtrace explores a different question:
 
-> What actually changed?
+> **What actually changed in the program?**
 
-By combining language-aware parsing with deterministic semantic analysis, SymTrace represents software evolution through meaningful structural operations instead of textual edits.
+The project investigates deterministic semantic differencing using language-aware program representations, enabling software changes to be represented through meaningful structural operations rather than only textual edits.
 
-## Current Projects
-
-### symtrace
-
-A deterministic semantic differencing engine for modern software repositories.
-
-Current research areas include:
+### Current Research Areas
 
 - Semantic differencing
-- Abstract Syntax Trees (AST)
-- Repository evolution
+- Abstract Syntax Trees (ASTs)
+- Program analysis
+- Software evolution
+- Repository analysis
 - Cross-file analysis
-- Static program analysis
+- Developer tooling
 - Software engineering research
 
 
 ## Principles
 
-SymTrace follows a few core principles.
+### Deterministic
 
-- Deterministic by design
-- Language agnostic
-- Research driven
-- Developer first
-- Open source
-- Extensible architecture
+Where possible, analysis and experiments should produce predictable and reproducible results.
 
+### Research Driven
+
+We investigate technical problems and validate ideas through experimentation before treating them as solutions.
+
+### Reproducible
+
+Methods, experiments, benchmarks, and implementation details should be documented so others can understand and reproduce the work.
+
+### Open
+
+We publish software, knowledge, and research artifacts openly whenever practical.
+
+### Engineering First
+
+Ideas should meet real systems, real code, and real constraints.
+
+### Developer Focused
+
+Research should ultimately help people understand, build, maintain, or work with software more effectively.
+
+## Open Source
+
+The SymtraceLabs GitHub organization is the central home for our open-source work.
+
+As the organization grows, this space will include repositories for:
+
+- Research projects
+- Developer tools
+- Documentation
+- Benchmarking
+- Datasets
+- Experimental systems
+- Research artifacts
+
+Explore our work:
+
+**[GitHub → github.com/Symtrace](https://github.com/Symtrace)**
 
 ## Roadmap
 
-Current priorities include:
+SymtraceLabs is starting with a focused research project and will grow through actual research and engineering work.
 
-- Stable semantic differencing engine
-- Cross-language support
-- Semantic operation detection
-- Repository evolution analysis
-- Benchmark datasets
-- Research publications
+### Current
 
+- Develop the Symtrace semantic analysis engine
+- Establish deterministic semantic operations
+- Investigate software evolution analysis
+- Improve repository-level analysis
+- Develop reproducible benchmarks
+
+### Next
+
+- Expand cross-language support
+- Develop benchmark datasets
+- Publish research notes and technical reports
+- Build reproducibility tooling
+- Establish contributor infrastructure
+- Develop additional open-source research projects
+
+### Long Term
+
+Build an open ecosystem where researchers and engineers can collaboratively investigate software systems, develop new tools, and share reproducible technical knowledge.
 
 ## Contributing
 
-Contributions, discussions, and research collaborations are welcome.
+SymtraceLabs is intended to be built openly.
 
-As the project matures, additional repositories for documentation, benchmarks, datasets, and publications will be added here.
+Contributions can take many forms:
 
+- Code
+- Research
+- Experiments
+- Benchmarking
+- Documentation
+- Dataset development
+- Testing
+- Technical discussions
+- Ideas and feedback
 
-## License
+Contribution guidelines will be published within individual repositories as each project matures.
 
-Each repository retains its own license.
+## Research → Build → Benchmark → Open
 
-Copyright remains with the respective contributors.
+We are interested not only in **what can be built**, but also in understanding:
+
+- Why it works
+- Where it fails
+- How it performs
+- Whether the results can be reproduced
+- How others can build upon it
+
+That is the foundation of SymtraceLabs.
+
+> **Open Research. Open Technology.**
