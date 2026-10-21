@@ -1,164 +1,105 @@
 # SymtraceLabs
 
-> **Open Research. Open Technology.**
+> **Compiler Intelligence for Systems Software and AI-Driven Engineering.**
+>
+> Open Research. Open Technology.
 
-SymtraceLabs is an open research and technology initiative focused on understanding, building, and improving software systems through practical experimentation and open-source engineering.
+SymtraceLabs is an independent research and engineering initiative exploring how software can be understood, analyzed, and evolved with greater precision.
 
-We explore technical problems, build working systems, evaluate them through reproducible experiments, and publish useful implementations, research artifacts, and engineering knowledge openly.
+We build **deterministic program analysis, structural representations, and developer tooling** for understanding code changes, program relationships, and software evolution. Our work connects practical systems engineering with open research into compiler-aware analysis and AI-assisted software development.
 
-Our work currently focuses on **software engineering, program analysis, developer tooling, software evolution, and systems research**, while leaving room for future research across emerging areas of technology.
+Our approach is simple: turn technical ideas into working systems, evaluate them through reproducible experiments, and publish useful implementations and research openly.
 
-**[Website](https://symtrace-labs.onrender.com/)** · **[GitHub](https://github.com/symtrace)**
+## Projects
 
-## Mission
+### [Symtrace](https://github.com/symtrace/symtrace)
 
-We believe useful research should not end with an idea, and useful software should not end with a repository.
+**Deterministic semantic diffing for software evolution.**
 
-SymtraceLabs aims to connect research with working systems through a simple cycle:
+Traditional diffs show textual changes. Symtrace explores how code changes can instead be represented as meaningful structural operations.
 
-```text
-Research
-   ↓
-Experiment
-   ↓
-Build
-   ↓
-Benchmark
-   ↓
-Reproduce
-   ↓
-Open
-```
+Written in Rust, Symtrace uses AST-based analysis to investigate program changes beyond line-by-line comparison. Its developer tooling includes command-line workflows, structured output formats, and an interactive terminal interface.
 
-Our goal is to make technical work understandable, reproducible, and useful to the wider community.
+- Structural semantic differencing
+- Change inspection and software evolution
+- Machine-readable output for developer workflows
+- Benchmarking and reproducible evaluation
 
-## Current Project
+[Repository](https://github.com/symtrace/symtrace) · [Documentation](https://symtrace-docs.vercel.app)
 
-### Symtrace
+### [Canontra](https://github.com/symtrace/canontra)
 
-**Deterministic semantic analysis for software evolution.**
+**Deterministic polyglot program identity and semantic graphs.**
 
-[Symtrace](https://github.com/Symtrace/Symtrace) is our first open-source project. It explores how software changes can be understood beyond textual line differences.
+Canontra investigates how source code can be represented through multiple levels of program identity, distinguishing textual changes from changes in structure, declarations, dependencies, and program relationships.
 
-Traditional version control systems primarily answer:
+Its analysis includes hierarchical program fingerprints and structural representations across Python, JavaScript, TypeScript, Go, and Rust.
 
-> Which lines changed?
+- Deterministic program fingerprints
+- Structural and declaration-level identity
+- Dependency and call-graph representations
+- Control-flow and data-flow fingerprints
+- Repository analysis and incremental computation
 
-Symtrace explores a different question:
+[Repository](https://github.com/symtrace/canontra)
 
-> **What actually changed in the program?**
+## Research Direction
 
-The project investigates deterministic semantic differencing using language-aware program representations, enabling software changes to be represented through meaningful structural operations rather than only textual edits.
+We are developing a broader research agenda around **program intelligence and compiler-aware developer infrastructure**.
 
-### Current Research Areas
+### Systems-language analysis
 
-- Semantic differencing
-- Abstract Syntax Trees (ASTs)
-- Program analysis
-- Software evolution
-- Repository analysis
-- Cross-file analysis
-- Developer tooling
-- Software engineering research
+Investigating deeper analysis of systems software, with an emphasis on language semantics, compiler representations, program relationships, and correctness-sensitive engineering workflows.
 
+### AI-assisted software engineering
 
-## Principles
+Exploring how deterministic program analysis can provide structured, inspectable context to AI coding agents, helping them investigate changes, trace dependencies, and validate proposed modifications through appropriate compiler and testing feedback.
 
-### Deterministic
+### Reproducible program intelligence
 
-Where possible, analysis and experiments should produce predictable and reproducible results.
+Studying program representations, deterministic fingerprints, semantic change analysis, and benchmark methodologies that make software-analysis results easier to compare, reproduce, and build upon.
 
-### Research Driven
+### Domain-specific intelligence for systems programming
 
-We investigate technical problems and validate ideas through experimentation before treating them as solutions.
+A longer-term research direction is the development of a domain-specific model for systems-level programming. We aim to investigate how curated code, program structure, compiler feedback, and task-specific evaluations can improve specialized software-engineering capabilities.
 
-### Reproducible
+These directions represent ongoing and planned research, not a claim that every capability is already available as a released product.
 
-Methods, experiments, benchmarks, and implementation details should be documented so others can understand and reproduce the work.
+## Our Approach
 
-### Open
+We connect research with implementation through a repeatable engineering process:
 
-We publish software, knowledge, and research artifacts openly whenever practical.
+**Research → Experiment → Build → Benchmark → Reproduce → Open**
 
-### Engineering First
+Our work is guided by a few principles:
 
-Ideas should meet real systems, real code, and real constraints.
-
-### Developer Focused
-
-Research should ultimately help people understand, build, maintain, or work with software more effectively.
-
-## Open Source
-
-The SymtraceLabs GitHub organization is the central home for our open-source work.
-
-As the organization grows, this space will include repositories for:
-
-- Research projects
-- Developer tools
-- Documentation
-- Benchmarking
-- Datasets
-- Experimental systems
-- Research artifacts
-
-Explore our work:
-
-**[GitHub → github.com/Symtrace](https://github.com/Symtrace)**
-
-## Roadmap
-
-SymtraceLabs is starting with a focused research project and will grow through actual research and engineering work.
-
-### Current
-
-- Develop the Symtrace semantic analysis engine
-- Establish deterministic semantic operations
-- Investigate software evolution analysis
-- Improve repository-level analysis
-- Develop reproducible benchmarks
-
-### Next
-
-- Expand cross-language support
-- Develop benchmark datasets
-- Publish research notes and technical reports
-- Build reproducibility tooling
-- Establish contributor infrastructure
-- Develop additional open-source research projects
-
-### Long Term
-
-Build an open ecosystem where researchers and engineers can collaboratively investigate software systems, develop new tools, and share reproducible technical knowledge.
+- **Determinism:** Prefer predictable, inspectable results wherever the problem allows.
+- **Evidence over claims:** Evaluate implementations through explicit methods and measurable results.
+- **Reproducibility:** Document experiments, benchmarks, assumptions, and limitations.
+- **Engineering first:** Test ideas against real code, practical constraints, and real workflows.
+- **Open by default:** Share software, research artifacts, and technical knowledge wherever practical.
 
 ## Contributing
 
-SymtraceLabs is intended to be built openly.
+We welcome developers and researchers interested in:
 
-Contributions can take many forms:
+- Compiler engineering and program analysis
+- Systems programming and programming-language tooling
+- Software evolution and structural code analysis
+- AI coding agents and tool-integrated reasoning
+- Benchmarking, testing, and reproducible research
 
-- Code
-- Research
-- Experiments
-- Benchmarking
-- Documentation
-- Dataset development
-- Testing
-- Technical discussions
-- Ideas and feedback
+Start with the repository that matches your interests, review its contribution guidelines, and open an issue or discussion to propose an improvement.
 
-Contribution guidelines will be published within individual repositories as each project matures.
+- [Contribute to Symtrace](https://github.com/symtrace/symtrace/blob/main/CONTRIBUTING.md)
+- [Contribute to Canontra](https://github.com/symtrace/canontra/blob/main/CONTRIBUTING.md)
 
-## Research → Build → Benchmark → Open
+## Explore SymtraceLabs
 
-We are interested not only in **what can be built**, but also in understanding:
+- [Website](https://symtrace-labs.onrender.com/)
+- [GitHub Organization](https://github.com/symtrace)
+- [LinkedIn](https://www.linkedin.com/company/symtrace-labs)
 
-- Why it works
-- Where it fails
-- How it performs
-- Whether the results can be reproduced
-- How others can build upon it
+We are interested not only in what can be built, but also in why it works, where it fails, how it performs, and whether others can independently reproduce the results.
 
-That is the foundation of SymtraceLabs.
-
-> **Open Research. Open Technology.**
+**Open Research. Open Technology.**
